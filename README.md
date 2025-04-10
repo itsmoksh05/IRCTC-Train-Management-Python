@@ -30,3 +30,24 @@ A command-line Python application that interfaces with the IRCTC API to provide 
 git clone https://github.com/itsmoksh05/IRCTC-Train-Management-Python.git
 cd IRCTC-Train-Management-Python
 pip install -r requirements.txt
+```
+## 🔑 API Key Setup
+
+To configure the environment and use the Indian Railways API:
+
+1. Create a `.env` file in the root directory of the project.
+2. Add the following lines:
+
+```env
+ENV_API_KEY=<your_actual_api_key>
+BASE_URL=https://indianrailapi.com/api/v2/
+```
+3. Replace <your_actual_api_key> with the API key you received from [Indian Railways API Collection](https://indianrailapi.com/api-collection).
+
+⚠️ Keep your .env file safe and do NOT share it publicly or commit it to GitHub.
+
+## Usage
+Run the script using Python:
+```bash
+python IRCTC.py
+```
